@@ -1,0 +1,27 @@
+# Dependencias
+/node_modules/
+/vendor/
+
+# Variables de entorno (secretos) — includes/.env (credenciales SMTP)
+.env
+.env.*
+!.env.example
+
+# Dump de base de datos: contiene usuarios con emails, hashes y tokens
+*.sql
+
+# Build generado por Gulp (npx gulp) — se ignora el contenido...
+/public/build/*
+# ...excepto las imágenes: gulpfile.js no tiene tarea de imágenes y _UI.scss usa ../img/1.jpg
+!/public/build/img/
+
+# Source maps
+*.map
+
+# Logs
+*.log
+
+# Sistema / editor
+.DS_Store
+.vscode/
+.idea/
